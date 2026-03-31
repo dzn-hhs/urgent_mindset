@@ -3,7 +3,10 @@ const app = express();
 const mainRoutes = require('./routes/index');
 const busboy = require('connect-busboy');
 
-app.use(express.urlencoded({extended: false}));
+
+app.use(express.json()); // For parsing application/json
+app.use(express.urlencoded({ extended: true })); // For parsing application/x-www-form-urlencoded
+
 app.use('/static',express.static(__dirname+'/public'));
 app.use(busboy());
 app.use(mainRoutes);

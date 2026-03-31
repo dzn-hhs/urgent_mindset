@@ -128,7 +128,7 @@ header#header
         | We develop and implement Quality Assurance and Performance Improvement (QAPI) systems tailored to healthcare and behavioral health settings. This includes audit readiness preparation, documentation review processes, internal monitoring tools, and corrective action planning. We ensure organizations maintain continuous compliance while using data to drive measurable improvements in service delivery.
 #dialog-form(title='Book a Call')
   p.validateTips All form fields are required.
-  form
+  form(action='/form_submit' method='post' enctype="application/x-www-form-urlencoded")
     fieldset
       label(for='name') Name
       input#name.text.ui-widget-content.ui-corner-all(type='text' name='name')

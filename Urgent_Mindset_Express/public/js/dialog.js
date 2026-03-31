@@ -69,7 +69,7 @@ $(function () {
     modal: true,
     buttons: {
       "Book a Call": function (){
-    
+        dialog.find("form").submit();
       },
       Cancel: function () {
         dialog.dialog("close");
