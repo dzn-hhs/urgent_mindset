@@ -4,7 +4,7 @@ const mainRoutes = require('./routes/index');
 const busboy = require('connect-busboy');
 
 app.use(express.urlencoded({extended: false}));
-app.use('/static',express.static('../'));
+app.use('/static',express.static(__dirname+'/../'));
 app.use(busboy());
 app.use(mainRoutes);
 app.set("views",__dirname + "/views");
