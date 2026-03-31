@@ -1,0 +1,27 @@
+{
+  "name": "urgent_mindset_express",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "David Nwokolo",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon --legacy-watch app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "connect-busboy": "^1.0.0",
+    "express": "^5.2.1",
+    "nodemailer": "^7.0.11",
+    "nodemon": "^3.1.11",
+    "pug": "^3.0.3"
+  },
+  "nodemonConfig": {
+    "watch": [
+      "./*",
+      "../*"
+    ],
+    "ext": "js json pug css html"
+  }
+}

@@ -1,0 +1,146 @@
+doctype html
+head
+  meta(charset='UTF-8')
+  meta(name='viewport' content='width=device-width, initial-scale=1.0')
+  link(rel='stylesheet' href='https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css')
+  link(rel='stylesheet' href='/static/css/index.css')
+  script(src='https://code.jquery.com/jquery-3.7.1.js')
+  script(src='https://code.jquery.com/ui/1.14.1/jquery-ui.js')
+  script(src='/static/js/dialog.js')
+  script(src='/static/js/burger_menu.js')
+  title Urgent Mindset
+header#header
+  img.logo(src='/static/img/Primary.png')
+  span#burger-menu &#x2630;
+  nav#main-nav
+    ul
+      a(href='#about-us')
+        li About Us
+      a(href='#services')
+        li Our Services
+      li.book-call Book a Call
+.main-body
+  section.text-section
+    h1
+      | Where Urgency Meets 
+      span.green Intelligence.
+    p
+      | Whether you're navigating change, scaling operations, or solving critical challenges, we partner with you
+      | to move forward fast and with purpose.
+    p
+      | As a strategic healthcare consulting firm, Urgent Mindset, Inc. is positioned at the 
+      | intersection of 
+      span.green expertise and execution.
+      |  Our name reflects our approach: we move with 
+      span.green intention, urgency, and precision
+      |  to solve critical challenges, streamline systems, and
+      | improve outcomes for providers, programs, and the people they serve.
+    a.service-link(href='#services') Explore Our Services
+    |&nbsp;
+    button#book-call.book-call Book a Call
+  section.img-section
+    .complex-img
+      img(src='/static/img/home-img.jpg')
+#about-us.about-us
+  section.img-section
+    .complex-img
+      img(src='/static/img/company-personnel-coming-together-to-honor-a-well-2025-02-20-01-59-44-utc.jpg')
+  section.text-section
+    h1
+      | About 
+      span.green Us
+      a.to-top(href='#header')  &#x25B2;
+    p
+      | Urgent Mindset, Inc. is a healthcare consulting and operations management group built to
+      | support providers, agencies, and health systems through complex transitions, compliance
+      | demands, and organizational growth. We serve as an extension of your team&mdash;offering
+      | expert-led solutions, staffing, and long-term strategic insight to improve care delivery and
+      | operational health.
+    p
+      | We are passionate about designing 
+      span.green sustainable, people-centered solutions
+      |  in a
+      | healthcare environment that is constantly evolving.
+#services.services
+  h1
+    | Our 
+    span.green Services 
+    a.to-top(href='#header')  &#x25B2;
+  p
+    | Our core services include the following, and each is tailored to meet the specific needs of
+    | healthcare providers, behavioral health organizations, and care delivery systems:
+  .service-cards
+    .service-card
+      h2 Healthcare Staffing Solutions
+      p
+        | We provide healthcare organizations with highly qualified clinical and administrative
+        | professionals who are ready to deliver. Whether short-term staffing support or long-term
+        | placement is needed, our team matches the right talent with the right mission&mdash;ensuring
+        | seamless continuity of care and operations.
+    .service-card
+      h2 Compliance Audits and Readiness Reviews
+      p
+        | Our audit support goes beyond box-checking. We conduct in-depth compliance reviews,
+        | risk assessments, and mock audits to prepare your organization for state, federal, and
+        | payer oversight. We help you find the gaps before the regulators do&mdash;and build corrective
+        | action plans that work.
+    .service-card
+      h2 RFP Response Development
+      p
+        | We offer full-service support in writing and managing competitive responses to RFPs,
+        | grants, and contracts. From strategy to submission, we craft proposals that reflect your
+        | strengths, align with funder priorities, and give you the best chance at winning.
+    .service-card
+      h2  Program Development &amp; Implementation
+      p
+        | From concept to launch, we help organizations design, pilot, and scale new programs that
+        | meet community needs and funding requirements. Our team handles all elements of
+        | development&mdash;from regulatory compliance to staffing and workflows&mdash;so your vision
+        | becomes a reality.
+    .service-card
+      h2  Staff Training &amp; Professional Development 
+      p
+        | We offer customized training modules and coaching that equip your workforce with the
+        | tools they need to succeed. Whether clinical compliance, cultural competency, or
+        | leadership training, we provide upskilling that&apos;s relevant, engaging, and rooted in real
+        | world practice.
+    .service-card
+      h2 Accreditation Preparation 
+      p
+        | Achieving accreditation is a milestone&mdash;and we&apos;re here to walk you through every step. We
+        | guide organizations through accreditation preparation for bodies like CARF, The Joint
+        | Commission, NCQA, and others. From documentation to practice readiness, we ensure
+        | you&apos;re not just prepared&mdash;you&apos;re confident.
+    .service-card
+      h2 Operations Management 
+      p
+        | Our consultants offer short- and long-term support for organizational operations,
+        | including workflow optimization, strategic planning, and crisis response. We help you
+        | identify inefficiencies, stabilize core systems, and build sustainable infrastructure for
+        | future growth.
+    .service-card
+      h2 Clinical Research
+      p
+        | We support healthcare organizations in developing and operationalizing clinical research programs, with a focus on site readiness, sponsor engagement, and regulatory compliance. Our services include feasibility assessments, Principal Investigator alignment, study startup processes, and infrastructure development for Phase II–IV trials. We work closely with leadership and clinical teams to ensure research integration aligns with existing service lines while meeting sponsor and IRB expectations.
+    .service-card
+      h2 Quality Assurance
+      p
+        | We develop and implement Quality Assurance and Performance Improvement (QAPI) systems tailored to healthcare and behavioral health settings. This includes audit readiness preparation, documentation review processes, internal monitoring tools, and corrective action planning. We ensure organizations maintain continuous compliance while using data to drive measurable improvements in service delivery.
+#dialog-form(title='Book a Call')
+  p.validateTips All form fields are required.
+  form
+    fieldset
+      label(for='name') Name
+      input#name.text.ui-widget-content.ui-corner-all(type='text' name='name')
+      br
+      label(for='email') Email
+      input#email.text.ui-widget-content.ui-corner-all(type='text' name='email')
+      br
+      label(for='phone') Phone
+      input#phone.text.ui-widget-content.ui-corner-all(type='phone' name='phone')
+      br
+      // Allow form submission with keyboard without duplicating the dialog button
+      input(type='submit' tabindex='-1' style='position:absolute; top:-1000px')
+footer.footer
+  span &copy; 2025 Urgent Mindset. All Rights Reserved
+  img.logo(src='/static/img/UM Icon Light.png')

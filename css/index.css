@@ -1,0 +1,330 @@
+html {
+    scroll-behavior: smooth;
+}
+/* Acumin Concept */
+@font-face {
+    font-family: "Acumin Concept";
+    font-weight: normal;
+    font-style: normal;
+    src: url("../font/Acumin_Concept/ACUMIN-RPRO.OTF") format("opentype"),
+         url("/static/font/Acumin_Concept/ACUMIN-RPRO.OTF") format("opentype");
+}
+
+@font-face {
+    font-family: "Acumin Concept";
+    font-weight: normal;
+    font-style: italic;
+    src: url("../font/Acumin_Concept/ACUMIN-ITPRO.OTF") format("opentype"),
+         url("/static/font/Acumin_Concept/ACUMIN-ITPRO.OTF") format("opentype");
+}
+
+@font-face {
+    font-family: "Acumin Concept";
+    font-weight: bold;
+    font-style: normal;
+    src: url("../font/Acumin_Concept/ACUMIN-BDPRO.OTF") format("opentype"),
+         url("/static/font/Acumin_Concept/ACUMIN-BDPRO.OTF") format("opentype");
+}
+
+@font-face {
+    font-family: "Acumin Concept";
+    font-weight: bold;
+    font-style: italic;
+    src: url("../font/Acumin_Concept/ACUMIN-BDITPRO.OTF") format("opentype"),
+         url("/static/font/Acumin_Concept/ACUMIN-BDITPRO.OTF") format("opentype");
+}
+/* Poppins */
+@font-face {
+    font-family: "Poppins";
+    font-weight: normal;
+    font-style: normal;
+    src: url("../font/Poppins/POPPINS-REGULAR.TTF") format("truetype"),
+         url("/static/font/Poppins/POPPINS-REGULAR.TTF") format("truetype");
+}
+
+@font-face {
+    font-family: "Poppins";
+    font-weight: normal;
+    font-style: italic;
+    src: url("../font/Poppins/POPPINS-ITALIC.TTF") format("truetype"),
+         url("/static/font/Poppins/POPPINS-ITALIC.TTF") format("truetype");
+}
+
+@font-face {
+    font-family: "Poppins";
+    font-weight: bold;
+    font-style: normal;
+    src: url("../font/Poppins/POPPINS-BOLD.TTF") format("truetype"),
+         url("/static/font/Poppins/POPPINS-BOLD.TTF") format("truetype");
+}
+
+@font-face {
+    font-family: "Poppins";
+    font-weight: bold;
+    font-style: italic;
+    src: url("../font/Poppins/POPPINS-BOLDITALIC.TTF") format("truetype"),
+         url("/static/font/Poppins/POPPINS-BOLDITALIC.TTF") format("truetype");
+}
+
+*{
+    --night-dive: #013856;
+    --lightish-green: #67e26d;
+    --surgeon-green: #00a36c;
+    --honeydew: #f0fff0;
+    color: var(--night-dive);
+    box-sizing: border-box;
+    font-family: "Poppins";
+    margin: 10px 0px;
+    padding: 0px;
+}
+
+h1{
+    font-family: "Acumin Concept";
+}
+.to-top{
+    text-decoration: none;
+    opacity: 20%;
+    padding: 0 20px;
+    border-radius: 20px;
+}
+.to-top:hover{
+    background-color: #a2c0a2
+}
+html,body {
+    margin-bottom: 0;
+}
+body{
+    background-color: var(--honeydew);
+}
+header, ul, .main-body, .about-us, .footer, .service-cards{
+    display: flex;
+}
+
+header{
+    justify-content: space-between;
+    position: relative;
+    padding-top: 10px;
+    margin: 0px 15px;
+}
+
+header * {
+    margin: 0px;
+}
+
+#burger-menu {
+    display: block;
+    font-size: 3rem;
+    padding: 0px 10px;
+    cursor: pointer;
+
+}
+
+#burger-menu.open{
+    background-color: var(--night-dive);
+    color: var(--honeydew);
+}
+
+nav{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 74px;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+    transition: all 1s;
+}
+
+.footer{
+    background-color: var(--night-dive);
+    margin-bottom: 0;
+    justify-content: space-between;
+    
+}
+.footer * {
+    color: var(--honeydew);
+}
+
+.footer span{
+    display: flex;
+    align-items: center;
+}
+
+.footer .logo{
+    height: 20px;
+}
+nav.open{
+    display: block;
+}
+
+.logo{
+    height: 60px;
+}
+
+nav ul{
+    list-style: none;
+    justify-content: space-between;
+    flex-direction: column;
+    background-color: var(--night-dive);
+    height: 165px;
+}
+nav ul li {
+    color: var(--honeydew);
+    padding: 15px
+}
+nav ul li:hover {
+    background-color: #16628b;
+}
+.main-body, .about-us{
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.green{
+    color: var(--lightish-green);
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+p {
+    font-size: 1.5rem;
+}
+ .complex-img{
+    flex: 1;
+
+    max-width: 800px;
+    min-width: 350px;
+    aspect-ratio: 2;
+	clip-path: shape(
+        from 100% 99.95%,
+        hline to 98.95%,
+        curve by -18.97% 0.05% with -6.32% 0%/-12.65% -0.04%,
+        curve by -1.06% -2.3% with -0.72% 0%/-0.93% -0.55%,
+        curve to 67.08% 57.85% with 77.47% 78.71%/73.54% 65.33%,
+        curve by 4.42% 42.1% with 2.64% 12.99%/4.2% 27.33%,
+        hline to 70.45%,
+        curve by -18.97% 0.05% with -6.32% 0%/-12.65% -0.04%,
+        curve by -1.06% -2.3% with -0.72% 0%/-0.93% -0.55%,
+        curve by -8.43% -34.93% with -1.18% -15.37%/-3.98% -27.08%,
+        curve by -0.01% 36.03% with -0.01% 18%,
+        arc by -0.08% 1.2% of 3.59% 8.95% small cw,
+        curve to 0% 0.05% with 18.73% 100.05%/0.75% 52.83%,
+        hline to 1.05%,
+        curve to 20.01% 0% with 7.37% 0.05%/13.7% 0.08%,
+        curve by 1.06% 2.3% with 0.72% 0%/0.93% 0.55%,
+        curve by 8.42% 34.92% with 1.18% 15.37%/3.98% 27.07%,
+        curve by 0.01% -36.02% with 0.01% -18%,
+        arc by 0.08% -1.2% of 3.28% 8.19% small cw,
+        curve to 58.01% 27.92% with 40.7% -0.02%/50.61% 10.81%,
+        curve by 0% -26.72% with 0.01% -13.35%,
+        arc by 0.08% -1.2% of 2.91% 7.26% small cw,
+        curve to 100% 99.95% with 81.27% -0.05%/99.25% 47.17%,
+        close);
+    z-index: 1;
+}
+
+
+.complex-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.img-section{
+    position: relative;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    max-width: 800px;
+    min-width: 350px;
+    order: 2;
+
+}
+
+.main-body, .about-us{
+    margin: 0px 15px;
+}
+
+.text-section{
+    flex: 1;
+    min-width: 320px;
+}
+
+
+.service-link, #book-call{
+    text-decoration: none;
+    background-color: var(--lightish-green);
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 5px;
+    border-width: 0px;
+    cursor: pointer;
+}
+
+.service-link:hover, #book-call:hover{
+    background-color:#a2e2a5;
+}
+
+.service-cards{
+    flex-wrap: wrap;
+}
+
+.service-card{
+    min-width: 350px;
+    flex: 1;
+    flex-basis: 30%;
+    text-align: center;
+    background-color: #c9e4c9;
+    margin: 0px 20px 20px;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 5px;
+}
+
+@media screen and ((min-width: 700px)) {
+    *{
+        margin: 10px 0px;
+    }
+    
+    .img-section{
+        order: 0;
+    }
+    header{
+        padding: 0px;
+    }
+    #burger-menu{
+        display: none;
+    }
+    nav{
+        display: block;
+        position: static;
+        min-width: 30%;
+        max-width: 500px;
+    }
+
+    nav ul{
+        list-style: none;
+        justify-content: space-between;
+        flex-direction: row;
+        background-color: inherit;
+        height: 100%;
+    }
+
+    nav ul li, nav ul a {
+        color: inherit;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+        border-radius: 5px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
+    nav ul li:hover, nav ul a:hover {
+        background-color: #c9e4c9
+    }
+}
