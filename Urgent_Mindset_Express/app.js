@@ -8,6 +8,7 @@ app.use('/static',express.static(__dirname));
 app.use(busboy());
 app.use(mainRoutes);
 app.set("views",__dirname + "/views");
+app.set("static",__dirname);
 app.set('view engine', 'pug');
 
 
