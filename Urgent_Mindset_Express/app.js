@@ -7,7 +7,7 @@ app.use(express.urlencoded({extended: false}));
 app.use('/static',express.static('../'));
 app.use(busboy());
 app.use(mainRoutes);
-app.set("views","./views");
+app.set("views",__dirname + "/views");
 app.set('view engine', 'pug');
 
 
