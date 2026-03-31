@@ -1,0 +1,48 @@
+/* 
+left-right curve
+clip-path: shape(
+        from 100% 50%,
+        line to 100% 100%,
+        arc to 0% 0% of 100% 100% cw,
+        line to 50% 0%,
+        arc to 100% 50% of 50% 50% 
+    ); */
+
+/* 
+right-left curve
+clip-path: shape(
+        from 0% 50%,
+        line to 0% 100%,
+        arc to 100% 0% of 100% 100% ,
+        line to 50% 0%,
+        arc to 0% 50% of 50% 50% cw
+    ); */
+
+/* .img-section:first-child .complex-img{
+    flex: 1;
+    margin-left: 50px;
+    aspect-ratio: 1 /1;
+    max-width: 800px;
+    min-width: 350px;
+    
+    z-index: 1;
+} */
+
+/* <div class="shape"> OR <img class="shape"> */
+.shape {
+	aspect-ratio: 2.498;
+	clip-path: shape(from 100% 99.95%,hline to 98.95%,curve by -18.97% 0.05% with -6.32% 0%/-12.65% -0.04%,curve by -1.06% -2.3% with -0.72% 0%/-0.93% -0.55%,curve to 67.08% 57.85% with 77.47% 78.71%/73.54% 65.33%,curve by 4.42% 42.1% with 2.64% 12.99%/4.2% 27.33%,hline to 70.45%,curve by -18.97% 0.05% with -6.32% 0%/-12.65% -0.04%,curve by -1.06% -2.3% with -0.72% 0%/-0.93% -0.55%,curve by -8.43% -34.93% with -1.18% -15.37%/-3.98% -27.08%,curve by -0.01% 36.03% with -0.01% 18%,arc by -0.08% 1.2% of 3.59% 8.95% small cw,curve to 0% 0.05% with 18.73% 100.05%/0.75% 52.83%,hline to 1.05%,curve to 20.01% 0% with 7.37% 0.05%/13.7% 0.08%,curve by 1.06% 2.3% with 0.72% 0%/0.93% 0.55%,curve by 8.42% 34.92% with 1.18% 15.37%/3.98% 27.07%,curve by 0.01% -36.02% with 0.01% -18%,arc by 0.08% -1.2% of 3.28% 8.19% small cw,curve to 58.01% 27.92% with 40.7% -0.02%/50.61% 10.81%,curve by 0% -26.72% with 0.01% -13.35%,arc by 0.08% -1.2% of 2.91% 7.26% small cw,curve to 100% 99.95% with 81.27% -0.05%/99.25% 47.17%,close);
+}
+
+/* .img-section::after {
+    content: "";
+    display: block;
+    position: absolute;
+    z-index: 2;
+    top: 75%;
+    left: 50%;
+    background-color: var(--lightish-green);
+    min-width: 25%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+} */
