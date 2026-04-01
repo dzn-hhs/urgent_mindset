@@ -185,11 +185,12 @@ nav ul li:hover {
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 p {
-    font-size: 1.5rem;
+    font-size: 1rem;
+    line-height: 2;
 }
  .complex-img{
     flex: 1;
@@ -257,7 +258,7 @@ p {
     background-color: var(--lightish-green);
     color: white;
     padding: 12px;
-    font-size: 16px;
+    font-size: 14px;
     border-radius: 5px;
     border-width: 0px;
     cursor: pointer;
